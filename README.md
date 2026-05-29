@@ -92,7 +92,8 @@ Example Docker Compose configuration for running a self-hosted Joplin Server wit
 
 ---
 
-# Deutsche Version
+<details>
+<summary>🇩🇪 Deutsche Version</summary>
 
 Beispielkonfiguration für einen selbst gehosteten Joplin Server mit PostgreSQL und Traefik als Reverse Proxy.
 
@@ -168,6 +169,6 @@ https://kerezovic.de/de/blog/praxis/joplin-onenote-alternative/
 ## Lizenz
 
 MIT License
-
+</details>
 
 MIT License
