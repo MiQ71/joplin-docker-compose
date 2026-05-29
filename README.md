@@ -1,8 +1,17 @@
 # Joplin Docker Compose Example
 
-Example Docker Compose configuration for running a self-hosted Joplin Server with PostgreSQL behind Traefik.
+Example Docker Compose setup for running a self-hosted Joplin Server with PostgreSQL behind Traefik.
 
-This repository provides a simple starting point for users who want to host their own Joplin Server using Docker Compose and a reverse proxy.
+This repository provides a simple and reproducible starting point for hosting Joplin Server with Docker Compose and a reverse proxy.
+
+## Why this repository exists
+
+This repository contains the example configuration used in my article about self-hosting Joplin.
+
+The goal is to provide a simple and reproducible setup that can be used as a starting point for your own installation.
+
+The configuration is intentionally kept simple and focuses on the components I use in my own homelab environment.
+
 
 ## Features
 
@@ -82,7 +91,11 @@ For production environments you should:
 
 A detailed explanation of why I use Joplin and how it fits into a self-hosted workflow can be found here:
 
+English:
 https://kerezovic.de/en/blog/real-world/joplin-onenote-alternative/
+
+German:
+https://kerezovic.de/de/blog/praxis/joplin-onenote-alternative/
 
 ## License
 
@@ -95,7 +108,16 @@ MIT License
 
 Beispielkonfiguration für einen selbst gehosteten Joplin Server mit PostgreSQL und Traefik als Reverse Proxy.
 
-Dieses Repository dient als einfacher Einstieg für alle, die Joplin mit Docker Compose betreiben möchten.
+Dieses Repository bietet einen einfachen und nachvollziehbaren Einstieg für alle, die Joplin mit Docker Compose betreiben möchten.
+
+## Warum dieses Repository existiert
+
+Dieses Repository enthält die Beispielkonfiguration, die auch im zugehörigen Artikel über selbst gehostetes Joplin verwendet wird.
+
+Ziel ist es, eine einfache und nachvollziehbare Ausgangsbasis bereitzustellen, die als Grundlage für eine eigene Installation dienen kann.
+
+Die Konfiguration wurde bewusst übersichtlich gehalten und orientiert sich an den Komponenten, die ich selbst in meinem Homelab einsetze.
+
 
 ## Funktionen
 
@@ -162,7 +184,11 @@ Für produktive Umgebungen sollten zusätzlich folgende Punkte berücksichtigt w
 
 ## Weiterführender Artikel
 
+Deutsch:
 https://kerezovic.de/de/blog/praxis/joplin-onenote-alternative/
+
+Englisch:
+https://kerezovic.de/en/blog/real-world/joplin-onenote-alternative/
 
 ## Lizenz
 
@@ -176,3 +202,9 @@ Maintained by Mirko Kerezovic.
 
 Website:
 https://kerezovic.de
+
+GitHub:
+https://github.com/MiQ71
+
+Topics:
+Linux, Docker, Proxmox, Selfhosting, Infrastructure, Privacy and Security.
