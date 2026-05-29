@@ -1,0 +1,33 @@
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    networks:
+      - internal
+
+  app:
+    image: joplin/server:latest
+    restart: unless-stopped
+    depends_on:
+      - db
+    env_file:
+      - .env
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+      - "traefik.http.routers.joplin.rule=Host(`joplin.example.com`)"
+      - "traefik.http.routers.joplin.entrypoints=websecure"
+      - "traefik.http.routers.joplin.tls=true"
+      - "traefik.http.services.joplin.loadbalancer.server.port=22300"
+    networks:
+      - internal
+      - traefik
+
+networks:
+  internal:
+  traefik:
+    external: true
