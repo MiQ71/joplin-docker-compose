@@ -86,9 +86,7 @@ https://kerezovic.de/en/blog/real-world/joplin-onenote-alternative/
 
 ## License
 
-# Joplin Docker Compose Example
-
-Example Docker Compose configuration for running a self-hosted Joplin Server with PostgreSQL behind Traefik.
+MIT License
 
 ---
 
@@ -171,4 +169,10 @@ https://kerezovic.de/de/blog/praxis/joplin-onenote-alternative/
 MIT License
 </details>
 
-MIT License
+
+## About
+
+Maintained by Mirko Kerezovic.
+
+Website:
+https://kerezovic.de
