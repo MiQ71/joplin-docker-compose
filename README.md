@@ -86,4 +86,88 @@ https://kerezovic.de/en/blog/real-world/joplin-onenote-alternative/
 
 ## License
 
+# Joplin Docker Compose Example
+
+Example Docker Compose configuration for running a self-hosted Joplin Server with PostgreSQL behind Traefik.
+
+---
+
+# Deutsche Version
+
+Beispielkonfiguration für einen selbst gehosteten Joplin Server mit PostgreSQL und Traefik als Reverse Proxy.
+
+Dieses Repository dient als einfacher Einstieg für alle, die Joplin mit Docker Compose betreiben möchten.
+
+## Funktionen
+
+* Joplin Server
+* PostgreSQL Datenbank
+* Docker Compose
+* Traefik Integration
+* HTTPS über Traefik
+
+## Voraussetzungen
+
+Vor dem Start sollten folgende Komponenten vorhanden sein:
+
+* Docker
+* Docker Compose
+* Eine funktionierende Traefik-Installation
+* Ein externes Docker-Netzwerk mit dem Namen `traefik`
+* Ein DNS-Eintrag für die gewünschte Domain
+
+## Schnellstart
+
+Repository klonen:
+
+```bash
+git clone https://github.com/MiQ71/joplin-docker-compose.git
+cd joplin-docker-compose
+```
+
+Beispielkonfiguration kopieren:
+
+```bash
+cp .env.example .env
+```
+
+Anschließend die Datei `.env` anpassen:
+
+* Datenbankpasswort setzen
+* Eigene Domain bei `APP_BASE_URL` eintragen
+* Optional Mail-Einstellungen konfigurieren
+
+In der Datei `compose.yml` die Domain anpassen:
+
+```yaml
+traefik.http.routers.joplin.rule=Host(`joplin.example.com`)
+```
+
+Container starten:
+
+```bash
+docker compose up -d
+```
+
+## Sicherheitshinweise
+
+Diese Konfiguration dient als Beispiel.
+
+Für produktive Umgebungen sollten zusätzlich folgende Punkte berücksichtigt werden:
+
+* Starke Passwörter verwenden
+* Docker-Images regelmäßig aktualisieren
+* Regelmäßige Backups erstellen
+* Logs überwachen
+* Nicht benötigte Dienste und Ports deaktivieren
+
+## Weiterführender Artikel
+
+https://kerezovic.de/de/blog/praxis/joplin-onenote-alternative/
+
+## Lizenz
+
+MIT License
+
+
 MIT License
