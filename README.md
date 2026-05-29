@@ -27,7 +27,7 @@ Before starting, make sure you have:
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-account>/joplin-docker-compose.git
+git clone https://github.com/MiQ71/joplin-docker-compose.git
 cd joplin-docker-compose
 ```
 
